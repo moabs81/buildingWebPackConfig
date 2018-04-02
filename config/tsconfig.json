@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "em6ModDist",
+        "target": "es6",
+        "module": "commonjs",
+        "lib": [
+            "es2015"
+        ],
+        "sourceMap": true,
+        "strict": true,
+        "moduleResolution": "Node",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "jsx": "preserve"
+    }
+}

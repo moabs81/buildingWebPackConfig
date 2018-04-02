@@ -1,0 +1,33 @@
+{
+  "name": "test-fabric-and-build",
+  "version": "0.1.0",
+  "description": "testing a few theories.",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "test": "echo \"nope\"",
+    "prebuild": "rm -rf dist/*",
+    "build": "webpack --env.STAGING=true --config ./config/webpack.config.js",
+    "prelocal": "rm -rf local/*",
+    "local": "webpack-dev-server --env.LOCAL=true --config ./config/webpack.config.js --hot --inline"
+  },
+  "author": "Nick H",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.9",
+    "dotenv": "^5.0.0",
+    "dotenv-webpack": "^1.5.4",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "typescript": "^2.7.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
